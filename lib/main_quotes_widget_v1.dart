@@ -32,7 +32,7 @@ class _QuoteListState extends State<QuoteList> {
           'Awesome Quotes',
         ),
         centerTitle: true,
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.redAccent,
       ),
       body: Column(
         // children expects a list as argument
