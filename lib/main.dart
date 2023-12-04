@@ -39,7 +39,14 @@ class _QuoteListState extends State<QuoteList> {
         // .map will take each item from the given list 'quoteList' and
         // returns the quote inside a Widget named QuoteCard which is a template of  the displayed card
         // using .toList() will return the entire thing as list to make "children" happy
-        children: quoteList.map((quote) => QuoteCard(quote: quote)).toList(),
+        children: quoteList.map((quote) => QuoteCard(
+          quote: quote,
+          delete: (){
+            setState(() {
+              quoteList.remove(quote);
+            });
+          }
+        )).toList(),
       ),
     );
   }

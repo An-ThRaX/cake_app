@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 
 class QuoteCard extends StatelessWidget {
   final Quote quote;
-  const QuoteCard({super.key, required this.quote});
+  // if I would used final Function delete I would get an error when I would call 
+  // the delete function on the onPressed property () -> 'Function' can't be 
+  //assigned to the parameter type 'void Function()?'
+  // VoidCallback delete or void Function() delete are the same
+  final VoidCallback delete;
+  const QuoteCard({super.key, required this.quote,  required this.delete});
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -32,7 +37,7 @@ class QuoteCard extends StatelessWidget {
               height: 8.0,
             ),
             TextButton.icon(
-              onPressed: () {},
+              onPressed: delete,
               label: const Text('Delete quote'),
               icon: const Icon(Icons.delete),
               
