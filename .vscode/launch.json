@@ -5,21 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "cake_app",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "cake_app (profile mode)",
+            "name": "world_time",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile"
+            "program": "lib/world_time/main.dart"
         },
         {
-            "name": "cake_app (release mode)",
+            "name": "quotes_app",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "release"
-        }
+            "flutterMode": "profile",
+            "program": "lib/quotes/main.dart"
+
+        },
     ]
 }
