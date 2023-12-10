@@ -14,8 +14,16 @@
             "name": "quotes_app",
             "request": "launch",
             "type": "dart",
-            "flutterMode": "profile",
+            "flutterMode": "debug",
             "program": "lib/quotes/main.dart"
+
+        },
+        {
+            "name": "cake_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "debug",
+            "program": "lib/cake_app/main.dart"
 
         },
     ]
