@@ -16,7 +16,6 @@
             "type": "dart",
             "flutterMode": "debug",
             "program": "lib/quotes/main.dart"
-
         },
         {
             "name": "cake_app",
@@ -24,7 +23,6 @@
             "type": "dart",
             "flutterMode": "debug",
             "program": "lib/cake_app/main.dart"
-
         },
     ]
 }

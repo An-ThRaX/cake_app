@@ -76,9 +76,9 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: IndieFlower
+    - family: Caveat
       fonts:
-        - asset: fonts/IndieFlower-Regular.ttf
+        - asset: assets/fonts/Caveat-Regular.ttf
         
   #
   # For details regarding fonts from package dependencies,
