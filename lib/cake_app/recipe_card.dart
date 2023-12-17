@@ -32,10 +32,15 @@ class RecipeCard extends StatelessWidget {
             const SizedBox(
               height: 8.0,
             ),
-            Center(
-              child: Image(
-                image: AssetImage(recipe[2].toString()),
-                // recipe[2] == the 3rd element from the List recipe
+            // changed the Center to Expanded so that I can fit the picture in the card
+            Expanded(
+              child: AspectRatio(
+                aspectRatio: 1.0,
+                child: Image(
+                  image: AssetImage(recipe[2].toString()),
+                  fit: BoxFit.cover,
+                  // recipe[2] == the 3rd element from the List recipe
+                ),
               ),
             ),
             const SizedBox(
