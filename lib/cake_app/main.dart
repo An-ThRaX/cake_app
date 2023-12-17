@@ -86,7 +86,8 @@ class _RecipeListState extends State<RecipeList> {
             ],
           ),
           Flexible(
-            child: Column(
+            // ListView is scrollable and doesnt overflow the screen
+            child: ListView(
               children: [
                 ListView.builder(
                     scrollDirection: Axis.vertical,
